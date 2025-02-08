@@ -5,20 +5,20 @@
 class Sgpt < Formula
   desc "Go clone of shell_gpt command. A command-line productivity tool powered by AI large language models (LLMs)."
   homepage "https://github.com/hirosassa/sgpt"
-  version "0.0.2"
+  version "0.0.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/hirosassa/sgpt/releases/download/v0.0.2/sgpt_0.0.2_Darwin_64bit.tar.gz"
-      sha256 "2f1bcdad94d054a2e89ec9b504cecf34734f70224360bc3f71d031de927b37b9"
+      url "https://github.com/hirosassa/sgpt/releases/download/v0.0.3/sgpt_0.0.3_Darwin_64bit.tar.gz"
+      sha256 "fb0b7349922e93e6c02d1d49f33141346c6f36eb0cd4af4032c8a028bb502b8a"
 
       def install
         bin.install "sgpt"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/hirosassa/sgpt/releases/download/v0.0.2/sgpt_0.0.2_Darwin_ARM64.tar.gz"
-      sha256 "82d28a8910adce3c830b4296edda246bb5bb9d5d0fe3952349a1988c1d7c75fb"
+      url "https://github.com/hirosassa/sgpt/releases/download/v0.0.3/sgpt_0.0.3_Darwin_ARM64.tar.gz"
+      sha256 "360cb9f3277c3795aedae3a82d4752162e5cd1847937e4296f901055e96dbc0d"
 
       def install
         bin.install "sgpt"
@@ -29,8 +29,8 @@ class Sgpt < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/hirosassa/sgpt/releases/download/v0.0.2/sgpt_0.0.2_Linux_64bit.tar.gz"
-        sha256 "4be131d59923ac02ea382883286b9689c08518d38194733b2865527926144d75"
+        url "https://github.com/hirosassa/sgpt/releases/download/v0.0.3/sgpt_0.0.3_Linux_64bit.tar.gz"
+        sha256 "b8fd765b02303dd5bb16b340535d927a2685462597025b136fcd8d6300b89efe"
 
         def install
           bin.install "sgpt"
@@ -39,8 +39,8 @@ class Sgpt < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/hirosassa/sgpt/releases/download/v0.0.2/sgpt_0.0.2_Linux_ARM64.tar.gz"
-        sha256 "a71d8a5701d617e41404e59dc1045ceecae6df6115b16c049d623ea3022b5c05"
+        url "https://github.com/hirosassa/sgpt/releases/download/v0.0.3/sgpt_0.0.3_Linux_ARM64.tar.gz"
+        sha256 "574ab6ba810d50d930fbd1dc6293742dbdc81596533ee848bd3b72b9177838b5"
 
         def install
           bin.install "sgpt"
